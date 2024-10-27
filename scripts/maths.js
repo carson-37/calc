@@ -1,4 +1,5 @@
-    function domLoaded(){
+window.addEventListener("DOMContentLoaded", domLoaded);
+function domLoaded(){
       const out = document.getElementById("output");
       const plus = document.getElementById("plus");
       const minus = document.getElementById("minus");
