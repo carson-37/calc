@@ -23,23 +23,28 @@ function domLoaded(){
   
     }
     function update1(){
-      operatornum = 1
-      operator = +
+      operatornum = 1;
+      operator = +;
     }
     function update2(){
-      operatornum = 2
+      operatornum = 2;
+      operator = -;
     }
     function update3(){
-      operatornum = 3
+      operatornum = 3;
+      operator = ÷;
     }
       function update4(){
-      operatornum = 4
+      operatornum = 4;
+      operator = X;
     }
       function update5(){
-      operatornum = 5
+      operatornum = 5;
+      operator = ≥;
     }
       function update6(){
-      operatornum = 6
+      operatornum = 6;
+      operator = ≤;
     }
     function math(){
       let n1 = parseFloat(document.getElementById("no1"));
