@@ -10,7 +10,6 @@ function domLoaded(){
       const equals = document.getElementById("equals");
       const oprator = document.getElementById("operator");
       let operatornum = 1;
-      const result = document.getElementById("result");
 
     plus.addEventListener("click", update1);
     minus.addEventListener("click", update2);
