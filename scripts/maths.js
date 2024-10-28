@@ -1,6 +1,6 @@
 window.addEventListener("DOMContentLoaded", domLoaded);
 function domLoaded(){
-      const out = document.getElementById("output");
+      const output = document.getElementById("output");
       const plus = document.getElementById("plus");
       const minus = document.getElementById("minus");
       const divide = document.getElementById("divide");
@@ -8,7 +8,7 @@ function domLoaded(){
       const greater = document.getElementById("greater");
       const less = document.getElementById("less");
       const equals = document.getElementById("equals");
-      const oprator = document.getElementById("operator");
+      const operator = document.getElementById("operator");
       let operatornum = 1;
 
     plus.addEventListener("click", update1);
@@ -68,7 +68,7 @@ function domLoaded(){
         result = les(n1, n2);
       }
 
-      out.innerHTML = result;
+      output.innerHTML = result;
     }
     function add(n1, n2){
       return n1 + n2;
