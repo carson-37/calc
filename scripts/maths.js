@@ -24,27 +24,27 @@ function domLoaded(){
     }
     function update1(){
       operatornum = 1;
-      operator.value = +;
+      operator.innerHTML = "+";
     }
     function update2(){
       operatornum = 2;
-      operator.value = -;
+      operator.innerHTML = "-";
     }
     function update3(){
       operatornum = 3;
-      operator.value = ÷;
+      operator.innerHTML = "÷";
     }
       function update4(){
       operatornum = 4;
-      operator.value = X;
+      operator.innerHTML = "X";
     }
       function update5(){
       operatornum = 5;
-      operator.value = ≥;
+      operator.innerHTML = "≥";
     }
       function update6(){
       operatornum = 6;
-      operator.value = ≤;
+      operator.innerHTML = "≤";
     }
     function math(){
       let n1 = parseFloat(document.getElementById("no1"));
@@ -68,7 +68,7 @@ function domLoaded(){
       else if(operatornum == 6){
         result = les(n1, n2);
       }
-      out.value = result;
+      out.innerHTML = result;
     }
     function add(n1, n2){
       return n1 + n2;
