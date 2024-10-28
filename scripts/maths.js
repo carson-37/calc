@@ -46,25 +46,25 @@ function domLoaded(){
       operator.innerHTML = "≤";
     }
     function math(){
-      let n1 = parseFloat(document.getElementById("n1"));
-      let n2 = parseFloat(document.getElementById("n2"));
+      let n1 = parseFloat(document.getElementById("n1").value);
+      let n2 = parseFloat(document.getElementById("n2").value);
       if(operatornum == 1){
-        result = add(n1.value, n2.value);
+        result = add(n1, n2);
       }
       else if(operatornum == 2){
-        result = sub(n1.value, n2.value);
+        result = sub(n1, n2);
       }
       else if(operatornum == 3){
-        result = div(n1.value, n2.value);
+        result = div(n1, n2);
       }
       else if(operatornum == 4){
-        result = mult(n1.value, n2.value);
+        result = mult(n1, n2);
       }
       else if(operatornum == 5){
-        result = mor(n1.value, n2.value);
+        result = mor(n1, n2);
       }
       else if(operatornum == 6){
-        result = les(n1.value, n2.value);
+        result = les(n1, n2);
       }
 
       output.innerHTML = result;
