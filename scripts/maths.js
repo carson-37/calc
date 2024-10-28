@@ -1,5 +1,6 @@
 window.addEventListener("DOMContentLoaded", domLoaded);
 function domLoaded(){
+      const out = document.getElementById("output");
       const plus = document.getElementById("plus");
       const minus = document.getElementById("minus");
       const divide = document.getElementById("divide");
@@ -45,8 +46,8 @@ function domLoaded(){
       operator.innerHTML = "≤";
     }
     function math(){
-      let n1 = parseFloat(document.getElementById("no1"));
-      let n2 = parseFloat(document.getElementById("no2"));
+      let n1 = parseFloat(document.getElementById("n1"));
+      let n2 = parseFloat(document.getElementById("n2"));
   
       if(operatornum == 1){
         result = add(n1, n2);
@@ -67,7 +68,7 @@ function domLoaded(){
         result = les(n1, n2);
       }
 
-      alert(result);
+      out.innerHTML = result;
     }
     function add(n1, n2){
       return n1 + n2;
