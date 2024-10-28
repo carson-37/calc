@@ -1,6 +1,5 @@
 window.addEventListener("DOMContentLoaded", domLoaded);
 function domLoaded(){
-      const out = document.getElementById("output");
       const plus = document.getElementById("plus");
       const minus = document.getElementById("minus");
       const divide = document.getElementById("divide");
@@ -67,7 +66,8 @@ function domLoaded(){
       else if(operatornum == 6){
         result = les(n1, n2);
       }
-      out.innerHTML = result;
+
+      alert(result);
     }
     function add(n1, n2){
       return n1 + n2;
