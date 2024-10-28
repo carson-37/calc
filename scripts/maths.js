@@ -48,24 +48,23 @@ function domLoaded(){
     function math(){
       let n1 = parseFloat(document.getElementById("n1"));
       let n2 = parseFloat(document.getElementById("n2"));
-      alert(n1);
       if(operatornum == 1){
-        result = add(n1, n2);
+        result = add(n1.value, n2.value);
       }
       else if(operatornum == 2){
-        result = sub(n1, n2);
+        result = sub(n1.value, n2.value);
       }
       else if(operatornum == 3){
-        result = div(n1, n2);
+        result = div(n1.value, n2.value);
       }
       else if(operatornum == 4){
-        result = mult(n1, n2);
+        result = mult(n1.value, n2.value);
       }
       else if(operatornum == 5){
-        result = mor(n1, n2);
+        result = mor(n1.value, n2.value);
       }
       else if(operatornum == 6){
-        result = les(n1, n2);
+        result = les(n1.value, n2.value);
       }
 
       output.innerHTML = result;
